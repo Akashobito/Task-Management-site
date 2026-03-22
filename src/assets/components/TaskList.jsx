@@ -22,10 +22,12 @@ function TaskList({
   };
 
   const handleDeleteAll = () => {
-    const alert = prompt("", "Do you want to delete all of these");
-    if (alert) {
-      console.log("delete all");
-      setTaskList([]);
+    if (taskList.length > 0) {
+      const alert = prompt("", "Do you want to delete all of these");
+      if (alert) {
+        console.log("delete all");
+        setTaskList([]);
+      }
     }
   };
 

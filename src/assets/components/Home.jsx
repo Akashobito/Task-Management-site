@@ -24,16 +24,18 @@ export default function Home({
   // console.log(dayjs(dateInput).format('DD-MM-YYYY'))
 
   const handleAdd = () => {
-    const taskListValue = {
-      task: taskInput.charAt(0).toUpperCase() + taskInput.slice(1),
-      date: dayjs(dateInput).format("DD-MM-YYYY"),
-      time: dayjs(`${timeInput}`, "hh:mm").format("h:mm A"),
-    };
+    if (taskInput !== "") {
+      const taskListValue = {
+        task: taskInput.charAt(0).toUpperCase() + taskInput.slice(1),
+        date: dayjs(dateInput).format("DD-MM-YYYY"),
+        time: dayjs(`${timeInput}`, "hh:mm").format("h:mm A"),
+      };
 
-    setTaskList([...taskList, taskListValue]);
-    setTaskInput("");
-    setDateInput(dayjs().format("YYYY-MM-DD"));
-    setTimeInput(dayjs().format("hh:mm"));
+      setTaskList([...taskList, taskListValue]);
+      setTaskInput("");
+      setDateInput(dayjs().format("YYYY-MM-DD"));
+      setTimeInput(dayjs().format("hh:mm"));
+    }
   };
 
   const handleEnter = (event) => {
