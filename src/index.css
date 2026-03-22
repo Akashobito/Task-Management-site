@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+@layer base {
+  *{
+    font-family:  'Montserrat Variable', sans-serif;
+    color:  #104050;
+  }
+}
+
+@theme {
+  --font-Montserrat: 'Montserrat Variable', sans-serif;
+}

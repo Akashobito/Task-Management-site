@@ -1,0 +1,44 @@
+{
+  "hash": "8bca50ed",
+  "configHash": "e110023e",
+  "lockfileHash": "36e1d1c5",
+  "browserHash": "c7af20dd",
+  "optimized": {
+    "dayjs": {
+      "src": "../../node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "817f1d9f",
+      "needsInterop": true
+    },
+    "dayjs/plugin/customParseFormat": {
+      "src": "../../node_modules/dayjs/plugin/customParseFormat.js",
+      "file": "dayjs_plugin_customParseFormat.js",
+      "fileHash": "2fb67ce3",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "8092a4b5",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "f7423cc7",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "16902928",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-D0Ie14tG": {
+      "file": "chunk-D0Ie14tG.js",
+      "isDynamicEntry": false
+    }
+  }
+}
