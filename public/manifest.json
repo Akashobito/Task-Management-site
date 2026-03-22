@@ -1,0 +1,10 @@
+{
+  "name": "My App",
+  "short_name": "MyApp",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    { "src": "/favicon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
