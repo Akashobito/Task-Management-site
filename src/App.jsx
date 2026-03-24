@@ -4,6 +4,7 @@ import "@fontsource-variable/montserrat";
 import Home from "./assets/components/Home";
 import TaskList from "./assets/components/TaskList";
 import EditTask from "./assets/components/EditTask";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [viewTask, setviewTask] = useState(false);
@@ -53,6 +54,7 @@ function App() {
           setIsEdit={setIsEdit}
         />
       )}
+      <Analytics />
     </>
   );
 }
