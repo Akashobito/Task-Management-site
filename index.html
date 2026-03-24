@@ -10,6 +10,21 @@
     ></script>
     <link rel="manifest" href="/manifest.json" />
     <title>Task Management</title>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=%VITE_GA_MEASUREMENT_ID%"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      // console.log('%VITE_GA_MEASUREMENT_ID%')
+
+      gtag("config", "%VITE_GA_MEASUREMENT_ID%");
+    </script>
   </head>
 
   <body>

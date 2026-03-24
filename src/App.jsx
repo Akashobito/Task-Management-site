@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import "@fontsource-variable/montserrat";
-import Home from "./assets/components/Home";
-import TaskList from "./assets/components/TaskList";
-import EditTask from "./assets/components/EditTask";
+import Home from "./components/Home";
+import TaskList from "./components/TaskList";
+import EditTask from "./components/EditTask";
 import { Analytics } from "@vercel/analytics/react"
 
+ 
 function App() {
   const [viewTask, setviewTask] = useState(false);
   const [taskList, setTaskList] = useState(
@@ -15,6 +16,7 @@ function App() {
   const [isEdit, setIsEdit] = useState(false);
 
   const editedIndex = useRef(null);
+
 
 
   useEffect(() => {
